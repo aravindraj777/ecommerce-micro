@@ -8,11 +8,13 @@ import com.microsecond.orderservice.repository.OrderRepository;
 import com.microsecond.orderservice.service.OrderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.UUID;
 
 @Service
+@Transactional
 @RequiredArgsConstructor
 public class OrderServiceImpl  implements OrderService {
 
